@@ -1,0 +1,52 @@
+<div class="form-group row">
+    <div class="col-md-12">
+        <div class="form-group floating-label">
+            <label for="searchteamlead">Your Team Lead is </label><span ng-show="!team.name" class="error-msg">{{resp.msg}}</span>
+            <div class="row">
+                <div class="col-md-8">
+                     <select id="searchbyteam" ng-options="resource.ID as resource.NAME for resource in resourceList" chosen="resourceList" class="form-control form-inline" ng-model="team.name"></select>
+                    <span class="glyphicon glyphicon-ban-circle success icon-clear" ng-show="team.name" uib-tooltip="Reset Name" ng-click="team.name=null"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-md-12">
+        <div class="form-group floating-label">
+            <label for="rateteamlead">Rate your Team Lead</label>
+            <br>
+            <label class="radio-inline">
+                <input type="radio" ng-model="team.rating" value="1">Very Dissatisfied</label>
+            <label class="radio-inline">
+                <input type="radio" ng-model="team.rating" value="2">Dissatisfied</label>
+            <label class="radio-inline">
+                <input type="radio" ng-model="team.rating" value="3">Neutral</label>
+            <label class="radio-inline">
+                <input type="radio" ng-model="team.rating" value="4">Moderately Satisfied</label>
+            <label class="radio-inline">
+                <input type="radio" ng-model="team.rating" value="5">Very Satisfied</label>
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-md-12">
+        <div class="form-group floating-label">
+            <label for="rateteamlead">Your views and feedback about your TL</label>
+            <br>
+            <textarea rows="4" cols="50" class="commentbox" ng-model="team.comments"></textarea>
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-md-3">
+        <a class="btn btn-info" ng-click="previousState('form.supervisor')">
+    Previous Section <span class="glyphicon glyphicon-circle-arrow-left"></span>
+    </a>
+    </div>
+    <div class="col-md-offset-6 col-md-3 pull-right">
+        <a class="btn btn-info" ng-click="formValidate('form.teammates',team.name)">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+    </div>
+</div>

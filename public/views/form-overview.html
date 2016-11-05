@@ -1,0 +1,64 @@
+<div class="form-group row">
+    <div class="col-md-6">
+        <div class="form-group floating-label">
+            <label for="resourcesex">Are you male or female?</label>
+            <br>
+            <label class="radio-inline">
+                <input type="radio" ng-model="overview.ressex" value="M">Male</label>
+            <label class="radio-inline">
+                <input type="radio" ng-model="overview.ressex" value="F">Female</label>
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-md-12">
+        <div class="form-group floating-label">
+            <label for="portfolio">Time period in Sudeep Da's Portfolio?</label><span ng-show="!overview.timeinport" class="error-msg">{{resp.msg}}</span>
+            <br>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="overview.timeinport" value="0">less than 1 yrs</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="overview.timeinport" value="1">1 - 2 yrs</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="overview.timeinport" value="2">2 - 3 yrs</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="overview.timeinport" value="3">3 - 4 yrs</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="overview.timeinport" value="4">4 - 5 yrs</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="overview.timeinport" value="5">more than 5 yrs</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-md-4">
+        <div class="form-group floating-label">
+            <label for="searchbyteam">Select Your Team</label>
+            <select id="searchbyteam" name="select2" class="form-control" ng-model="overview.team" ng-init="overview.team='VORTEX'">
+                <option value="VORTEX">VORTEX</option>
+                <option value="WERAM">WER-AM</option>
+                <option value="WERAD">WER-AD</option>
+                <option value="WVO">WVO</option>
+                <option value="UI">UI</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-md-6">
+        <a class="btn btn-info" ng-click="formValidate('form.supervisor',overview.timeinport)"> Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+    </div>
+</div>

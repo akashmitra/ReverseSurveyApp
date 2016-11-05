@@ -1,0 +1,39 @@
+<div class="row">
+
+<div class="col-sm-8 col-sm-offset-2">
+
+
+
+  <div id="form-container">
+  
+      <div class="page-header text-center">
+          <h2>VORTEX 360 SURVEY</h2>
+          
+          <!-- the links to our nested states using relative paths -->
+          <!-- add the active class if the state matches our ui-sref -->
+          <div id="status-buttons" class="text-center">
+              <a ng-class="{active: currentstate=='form.overview'}"><span>1</span> Overview</a>
+              <a ng-class="{active: currentstate=='form.supervisor'}"><span>2</span> Supervisor</a>
+              <a ng-class="{active: currentstate=='form.team'}"><span>3</span> Team</a>
+              <a ng-class="{active: currentstate=='form.teammates'}"><span>4</span> Team Members</a>
+              <a ng-class="{active: currentstate=='form.portfolio'}"><span>5</span> Portfolio</a>
+              <a ng-class="{active: currentstate=='form.feedback'}"><span>6</span> Your Thoughts</a>
+          </div>
+      </div>
+      
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form id="survey-form" ng-submit="submitSurvey()">
+          <!-- our nested state views will be injected here -->
+          <div id="form-views" ui-view></div>
+      </form>
+  
+  </div>
+  
+  <!-- show our formData as it is being typed -->
+  <pre>
+    {{ finalValues }}
+  </pre>
+
+</div>
+</div>
+

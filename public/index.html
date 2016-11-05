@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vortex360</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/libs/bootstrap.css">
+    <link rel="stylesheet" href="style/libs/chosen.min.css">
+    <link rel="stylesheet" href="style/font-awesome.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/libs/DataTables/jquery.dataTables.css" />
+    <link rel="stylesheet" href="style/libs/DataTables/extensions/dataTables.colVis.css" />
+    <link rel="stylesheet" href="style/libs/DataTables/extensions/dataTables.tableTools.css" />
+    <link rel="stylesheet" href="style/libs/angular-chart.css" />
+</head>
+
+<body ng-app="surveyApp">
+    <!-- views will be injected here -->
+    <div class="container">
+            <div ng-hide="'home' | isState">
+                <div class="zoom-text" id="home-tab" style="float: right"><a ui-sref="home">Home</a></div>
+            </div>
+        <div ui-view></div>
+        
+    </div>
+
+
+
+    <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="script/libs/jquery.min.js"></script>
+    <script src="script/libs/chosen.jquery.min.js"></script>
+    <script src="script/libs/angular.min.js"></script>
+    <script src="script/libs/ui-bootstrap.min.js"></script>
+    <script src="script/libs/angular-ui-router.min.js"></script>
+    <script src="script/libs/angular-animate.min.js"></script>
+    <script src="script/control.js"></script>
+    <script src="script/libs/validate.js"></script>
+    <script src="script/libs/Chart.min.js"></script>
+    <script src="script/libs/angular-chart.min.js"></script>
+    <script src="script/libs/angular-chart.js"></script>
+    <!--<script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="script/draw.js" ></script>-->
+</body>
+
+</html>

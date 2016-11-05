@@ -1,0 +1,121 @@
+<div class="row">
+
+<div class="col-sm-10 col-sm-offset-1">
+
+
+
+<div id="form-container">
+  
+  	<div class="page-header text-center">
+      <h3>VORTEX 360 REVIEW</h3>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-md-12 col-md-offset-3">
+            <div class="form-group floating-label">
+                <label for="searchresource">Resource Name </label><span ng-show="!resourceName" class="error-msg">{{resp.msg}}</span>
+                <div class="row">
+                    <div class="col-md-8 ">
+                         <select id="searchName" ng-options="resource.ID as resource.NAME for resource in resourceList" chosen="resourceList" class="form-control form-inline" ng-model="resourceName"  ng-change="getReview(resourceName)"></select>
+                        <span class="glyphicon glyphicon-ban-circle success icon-clear" ng-show="resourceName" uib-tooltip="Reset Name" ng-click="resourceName=null;supervisorlist=null;teammemberlist=null;commentslist=null;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 col-md-6">
+        <div class="section" ng-show="supervisorlist" style="padding-left:15px;">
+                <div class="table-responsive">
+                    <div class="center bg-success">
+                        <p> AS A SUPERVISOR :<p>
+                    </div>
+                    <table id="datatable" class="table table-hover table-condensed table-bordered" >
+                        <thead>
+                            <tr>
+                                <th><a class="sortstyle" ng-click="filterTable('respondant');">RESPONDANT ID<i class="fa fa-angle-down"></i></a></th>
+                                <th><a class="sortstyle" ng-click="filterTable('rate');">RATING <i class="fa fa-angle-down"></i></a></th>
+                                <th><a class="sortstyle" ng-click="filterTable('involve');">INVOLVE <i class="fa fa-angle-down"></i></a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="records in supervisorlist | orderBy: filterkeyword">
+                                <td><span>{{ records.RESPONDANT }}</span>
+                                </td>
+                                <td><span>{{records.RATE }}</span>
+                                </td>
+                                <td><span>{{ records.INVOLVE }}</span>
+                                </td>
+                        </tbody>
+                    </table>
+                </div>
+                <!--end .table-responsive -->
+    </div>
+    <!-- END DATATABLE 1 -->
+    </div>
+    <!--end .col -->
+    <div class="col-lg-6 col-md-6">
+            <div class="section" ng-show="teammemberlist" style="padding-right:15px;">
+                <div class="table-responsive">
+                    <div class="center bg-success" >
+                        <p> AS A TEAMMEMBER :<p>
+                    </div>
+                        <table id="datatable" class="table table-hover table-condensed table-bordered" >
+                            <thead>
+                                <tr>
+                                    <th><a class="sortstyle" ng-click="filterTable('respondant');">RESPONDANT ID<i class="fa fa-angle-down"></i></a></th>
+                                    <th><a class="sortstyle" ng-click="filterTable('rate');">RATING <i class="fa fa-angle-down"></i></a></th>
+                                    <th><a class="sortstyle" ng-click="filterTable('involve');">TEAM LEAD (Y/N) <i class="fa fa-angle-down"></i></a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="records in teammemberlist | orderBy: filterkeyword">
+                                    <td><span>{{ records.RESPONDANT }}</span>
+                                    </td>
+                                    <td><span>{{records.RATE }}</span>
+                                    </td>
+                                    <td><span>{{ records.ISTL }}</span>
+                                    </td>
+                            </tbody>
+                        </table>
+                 </div>
+                <!--end .table-responsive -->
+            </div>
+    </div>
+    <!--end col-->
+
+
+
+    <div class="col-lg-12 col-md-12">
+        <div class="" ng-show="commentslist" style="padding-left:15px;padding-right:15px;">
+            <div class="bg-success" style="text-align:center;">
+                <p>COMMENTS</p>   
+            </div>
+                <div class="">
+                    <div ng-repeat="records in commentslist | filter: {COMMENT:''}">
+                        <p>{{ records.COMMENT }}</p>
+                    </div>
+                </div>
+        </div>         
+    </div>
+    <!--Begin Charts-->
+    <section>
+        <!-- <div class="col-lg-offset-2"></div> -->
+        <div class="col-lg-offset-2 col-lg-8 col-md-8">
+        <canvas id="doughnut" class="chart chart-doughnut"
+        chart-data="data" chart-labels="labels">
+        </canvas> 
+            <!-- <canvas id="line" class="chart chart-line" chart-data="data"chart-labels="labels" chart-legend="true" 
+            chart-series="series"chart-click="onClick" >
+            </canvas> -->  
+        </div>
+    </section>
+    <!--End Charts--> 
+</div>
+<!-- our nested state views will be injected here -->
+<div id="form-views" ui-view></div>
+          
+</div>
+</div>
+</div>
+
