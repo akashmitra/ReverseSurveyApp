@@ -16,7 +16,7 @@
 
     var resourceList = require('./helper/fetchResourceHelper');
     var surveyRouter = require('./helper/surveyRouterHelper');
-    var reviewRouter = require('./helper/reviewRouterHelper')
+    var reviewRouter = require('./helper/reviewRouterHelper');
 
 
     /*JS client side files has to be placed under a folder by name 'public' */
@@ -39,6 +39,7 @@
         feedbacklist = reviewRouter.fetchReview(req, res);
         return feedbacklist
     });
+
 
     /* Service for Survey Submit */
     app.post('/submitSurvey', function (req, res) {

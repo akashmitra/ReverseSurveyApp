@@ -1,19 +1,13 @@
 // create our angular app and inject ngAnimate and ui-router 
 // =============================================================================
-var app = angular.module('surveyApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'chart.js']);
+var app = angular.module('surveyApp', ['ngAnimate', 'ui.router', 'ui.bootstrap']);
 
 // configuring our routes 
 // =============================================================================
 app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
-
-        .state('home', {
-            url: '/home',
-            templateUrl: 'views/home.html'
-        })
-
-        // route to show our basic form (/form)
+       // route to show our basic form (/form)
         .state('form', {
             url: '/form',
             templateUrl: 'views/form.html',
@@ -64,7 +58,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/form/overview');
 });
 
 

@@ -8642,3 +8642,174 @@
 [2016-08-28 13:53:11.732] [INFO] console - Mongoose default connection disconnected
 [2016-08-28 13:53:11.737] [INFO] console - Mongoose default connection error: MongoError: connect ECONNREFUSED 127.0.0.1:27017
 [2016-08-28 13:56:14.762] [INFO] console - Mongoose default connection disconnected through app termination
+[2017-03-08 19:52:49.408] [TRACE] develop - Express server listening on port 80
+[2017-03-08 19:52:49.506] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/v360
+[2017-03-08 20:03:01.762] [TRACE] develop - Number of Resources :: 107
+[2017-03-08 20:06:55.530] [TRACE] develop - The Body :: [object Object]
+[2017-03-08 20:06:55.559] [INFO] console - newOverview :: { _id: 58c0170739ab13ac46a7d7e1,
+  TEAM: 'VORTEX',
+  TIME: '5',
+  SEX: 'M',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:06:55.562] [TRACE] develop - newPortfolio :: { _id: 58c0170739ab13ac46a7d7e2,
+  INVOLVE: '5',
+  RATE: '5',
+  SUPERVISOR: '119640',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:06:55.566] [INFO] console - newPortfolio :: { _id: 58c0170739ab13ac46a7d7f0,
+  ASPIRE: undefined,
+  Q11: undefined,
+  Q10: undefined,
+  Q9: undefined,
+  Q8: undefined,
+  Q7: undefined,
+  Q6: undefined,
+  Q5: undefined,
+  Q4: undefined,
+  Q3: undefined,
+  Q2: undefined,
+  Q1: undefined,
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:06:55.647] [INFO] console - Overview Added!
+[2017-03-08 20:06:55.658] [TRACE] develop - Supervisor Created!
+[2017-03-08 20:06:55.658] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.658] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.663] [INFO] console - Team Mates Created!
+[2017-03-08 20:06:55.663] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.664] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.665] [INFO] console - Team Mates Created!
+[2017-03-08 20:06:55.665] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.666] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.666] [INFO] console - Team Created!
+[2017-03-08 20:06:55.666] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.667] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.667] [INFO] console - Team Mates Created!
+[2017-03-08 20:06:55.667] [TRACE] develop - Comment Posted!
+[2017-03-08 20:06:55.668] [TRACE] develop - Portfolio Created!
+[2017-03-08 20:07:27.167] [TRACE] develop - The Body :: [object Object]
+[2017-03-08 20:07:27.168] [INFO] console - newOverview :: { _id: 58c0172739ab13ac46a7d7f1,
+  TEAM: 'VORTEX',
+  TIME: '5',
+  SEX: 'M',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:07:27.169] [TRACE] develop - newPortfolio :: { _id: 58c0172739ab13ac46a7d7f2,
+  INVOLVE: '5',
+  RATE: '5',
+  SUPERVISOR: '119640',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:07:27.174] [INFO] console - newPortfolio :: { _id: 58c0172739ab13ac46a7d800,
+  ASPIRE: undefined,
+  Q11: undefined,
+  Q10: undefined,
+  Q9: undefined,
+  Q8: undefined,
+  Q7: undefined,
+  Q6: undefined,
+  Q5: undefined,
+  Q4: undefined,
+  Q3: undefined,
+  Q2: undefined,
+  Q1: undefined,
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:07:27.194] [INFO] console - Overview Added!
+[2017-03-08 20:07:27.194] [INFO] console - Team Mates Created!
+[2017-03-08 20:07:27.195] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.195] [TRACE] develop - Supervisor Created!
+[2017-03-08 20:07:27.196] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.197] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.198] [INFO] console - Team Created!
+[2017-03-08 20:07:27.198] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.198] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.199] [INFO] console - Team Mates Created!
+[2017-03-08 20:07:27.201] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.202] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.202] [INFO] console - Team Mates Created!
+[2017-03-08 20:07:27.203] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.205] [TRACE] develop - Comment Posted!
+[2017-03-08 20:07:27.206] [TRACE] develop - Portfolio Created!
+[2017-03-08 20:09:01.727] [TRACE] develop - The Body :: [object Object]
+[2017-03-08 20:09:01.728] [INFO] console - newOverview :: { _id: 58c0178539ab13ac46a7d801,
+  TEAM: 'VORTEX',
+  TIME: '5',
+  SEX: 'F',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:09:01.728] [TRACE] develop - newPortfolio :: { _id: 58c0178539ab13ac46a7d802,
+  INVOLVE: '5',
+  RATE: '5',
+  SUPERVISOR: '119640',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:09:01.735] [INFO] console - newPortfolio :: { _id: 58c0178539ab13ac46a7d810,
+  ASPIRE: undefined,
+  Q11: undefined,
+  Q10: undefined,
+  Q9: undefined,
+  Q8: undefined,
+  Q7: undefined,
+  Q6: undefined,
+  Q5: undefined,
+  Q4: undefined,
+  Q3: undefined,
+  Q2: undefined,
+  Q1: undefined,
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:09:01.747] [INFO] console - Overview Added!
+[2017-03-08 20:09:01.747] [INFO] console - Team Mates Created!
+[2017-03-08 20:09:01.750] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.750] [TRACE] develop - Portfolio Created!
+[2017-03-08 20:09:01.751] [TRACE] develop - Supervisor Created!
+[2017-03-08 20:09:01.751] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.751] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.756] [INFO] console - Team Created!
+[2017-03-08 20:09:01.756] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.756] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.757] [INFO] console - Team Mates Created!
+[2017-03-08 20:09:01.759] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.759] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.761] [INFO] console - Team Mates Created!
+[2017-03-08 20:09:01.762] [TRACE] develop - Comment Posted!
+[2017-03-08 20:09:01.762] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.095] [TRACE] develop - The Body :: [object Object]
+[2017-03-08 20:34:18.096] [INFO] console - newOverview :: { _id: 58c01d7239ab13ac46a7d811,
+  TEAM: 'VORTEX',
+  TIME: '5',
+  SEX: 'F',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:34:18.097] [TRACE] develop - newPortfolio :: { _id: 58c01d7239ab13ac46a7d812,
+  INVOLVE: '5',
+  RATE: '5',
+  SUPERVISOR: '119640',
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:34:18.100] [INFO] console - newPortfolio :: { _id: 58c01d7239ab13ac46a7d820,
+  ASPIRE: undefined,
+  Q11: undefined,
+  Q10: undefined,
+  Q9: undefined,
+  Q8: undefined,
+  Q7: undefined,
+  Q6: undefined,
+  Q5: undefined,
+  Q4: undefined,
+  Q3: undefined,
+  Q2: undefined,
+  Q1: undefined,
+  RESPONDANT: 'Akash' }
+[2017-03-08 20:34:18.108] [INFO] console - Overview Added!
+[2017-03-08 20:34:18.108] [INFO] console - Team Mates Created!
+[2017-03-08 20:34:18.109] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.109] [TRACE] develop - Portfolio Created!
+[2017-03-08 20:34:18.109] [TRACE] develop - Supervisor Created!
+[2017-03-08 20:34:18.109] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.109] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.110] [INFO] console - Team Created!
+[2017-03-08 20:34:18.110] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.110] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.110] [INFO] console - Team Mates Created!
+[2017-03-08 20:34:18.110] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.110] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.111] [INFO] console - Team Mates Created!
+[2017-03-08 20:34:18.111] [TRACE] develop - Comment Posted!
+[2017-03-08 20:34:18.112] [TRACE] develop - Comment Posted!
+[2017-03-08 20:35:39.771] [INFO] console - Mongoose default connection disconnected
+[2017-03-08 20:38:47.452] [TRACE] develop - Express server listening on port 80
+[2017-03-08 20:38:48.481] [INFO] console - Mongoose default connection disconnected
+[2017-03-08 20:38:48.497] [INFO] console - Mongoose default connection error: MongoError: connect ECONNREFUSED 127.0.0.1:27017
