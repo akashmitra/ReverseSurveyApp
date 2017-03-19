@@ -29,7 +29,7 @@
     app.get('/getResourceList', function (req, res) {
         res.setHeader('Content-Type', 'application/json');
         resourcelist = resourceList.getResource(req, res);
-        return resourcelist
+        return resourcelist;
     });
 
     /* Service to get feedback */
@@ -37,7 +37,7 @@
         res.setHeader('Content-Type', 'application/json');
         logger.trace('The Body :: ' + req.body);
         feedbacklist = reviewRouter.fetchReview(req, res);
-        return feedbacklist
+        return feedbacklist;
     });
 
 
@@ -46,7 +46,7 @@
         res.setHeader('Content-Type', 'application/json');
         logger.trace('The Body :: ' + req.body);
         surveysub = surveyRouter.answerrouter(req, res);
-        return surveysub
+        return surveysub;
     });
 
 
