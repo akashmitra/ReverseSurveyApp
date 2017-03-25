@@ -19,11 +19,11 @@
 <body>
     <!-- views will be injected here -->
     <div class="container">
-            <div ng-hide="'home' | isState">
-                <div class="zoom-text" id="home-tab" style="float: right"><a ui-sref="home">Home</a></div>
-            </div>
+        <div ng-hide="'home' | isState">
+            <div class="zoom-text" id="home-tab" style="float: right"><a ui-sref="home">Home</a></div>
+        </div>
         <div ui-view></div>
-        
+
     </div>
 
 
@@ -43,7 +43,7 @@
     <!-- Controllers -->
     <script src="script/controllers/surveyControl.js"></script>
     <script src="script/controllers/reviewControl.js"></script>
-    
+
     <!-- Directive -->
     <script src="script/directives/jqueryplugins.directives.js"></script>
 

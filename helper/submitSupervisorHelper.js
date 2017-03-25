@@ -1,27 +1,32 @@
-// Injecting Logger Module
-var logger = require('../log');
-var Supervisor = require('../models/supervisormodels');
+(function () {
 
-exports.addSupervisor = function(req, res) {
+    // Injecting Logger Module
+    var logger = require('../log');
+    var Supervisor = require('../models/supervisormodels');
 
-var newSupervisor = Supervisor({
-        'RESPONDANT' : 'Akash',
-        'SUPERVISOR': req.body.Supervisor.name,
-        'RATE': req.body.Supervisor.rating,
-        'INVOLVE': req.body.Supervisor.involvement
-    });
+    exports.addSupervisor = function (req, res) {
 
-    logger.trace('newPortfolio :: '+ newSupervisor);
+        var newSupervisor = Supervisor({
+            'RESPONDANT': 'Akash',
+            'SUPERVISOR': req.body.Supervisor.name,
+            'RATE': req.body.Supervisor.rating,
+            'INVOLVE': req.body.Supervisor.involvement
+        });
 
-    newSupervisor.save(function(err){
-        req.body.Status = 'success';
-        logger.trace('Supervisor Created!');
-        if(err) {
-            req.body.Status = 'failure';
-            req.body.errmsg="Database error";
-        };      
-        
-    });     
+        logger.trace('newPortfolio :: ' + newSupervisor);
+
+        newSupervisor.save(function (err) {
+            req.body.Status = 'success';
+            logger.trace('Supervisor Created!');
+            if (err) {
+                req.body.Status = 'failure';
+                req.body.errmsg = "Database error";
+            };
+
+        });
+
+    }
+
+}());
 
 
-}

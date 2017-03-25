@@ -1,12 +1,17 @@
-// Injecting Logger Module
-var logger = require('../log');
-var fetchSupervisor = require('../helper/fetchSupervisorHelper');
+(function () {
 
-exports.fetchReview = function(req, res) {
+    // Injecting Logger Module
+    var logger = require('../log');
+    var fetchSupervisor = require('../helper/fetchSupervisorHelper');
 
-
-fetchSupervisor.getSupervisor(req, res );
-
+    exports.fetchReview = function (req, res) {
 
 
-}
+        fetchSupervisor.getSupervisor(req, res);
+
+
+
+    }
+
+}());
+

@@ -1,16 +1,22 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+(function () {
 
-// Create a schema
-var overviewSchema = new Schema({
-    TARGET: String,
-    COMMENT: String
-}, {
-    collection: 'comments'
-});
+    var mongoose = require('mongoose');
+    var Schema = mongoose.Schema;
 
-// Create a model 
-var Comment = mongoose.model('Comment', overviewSchema);
+    // Create a schema
+    var overviewSchema = new Schema({
+        TARGET: String,
+        COMMENT: String
+    }, {
+            collection: 'comments'
+        });
 
-// Make model available 
-module.exports = Comment;
+    // Create a model 
+    var Comment = mongoose.model('Comment', overviewSchema);
+
+    // Make model available 
+    module.exports = Comment;
+
+}());
+
+

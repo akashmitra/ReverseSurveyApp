@@ -1,3 +1,5 @@
+(function(){}());
+
 // Injecting Logger Module
 var logger = require('../log');
 var Portfolio = require('../models/portfoliomodels');

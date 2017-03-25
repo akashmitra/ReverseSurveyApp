@@ -1,26 +1,32 @@
-// Injecting Logger Module
-var logger = require('../log');
-var Comment = require('../models/commentmodels');
+(function () {
+    
+    // Injecting Logger Module
+    var logger = require('../log');
+    var Comment = require('../models/commentmodels');
 
-exports.addComment = function(commentvalue) {
+    exports.addComment = function (commentvalue) {
 
-    for (var comment in commentvalue) {
+        for (var comment in commentvalue) {
 
-        val = commentvalue[comment];
+            val = commentvalue[comment];
 
-        var newComment = Comment({
-            'TARGET': val.TARGET,
-            'COMMENT': val.COMMENT
-        });
+            var newComment = Comment({
+                'TARGET': val.TARGET,
+                'COMMENT': val.COMMENT
+            });
 
-        newComment.save(function(err) {
-            logger.trace('Comment Posted!');
-            if (err) {
-                req.body.Status = 'failure';
-            req.body.errmsg="Database error";
-            };
-        });
+            newComment.save(function (err) {
+                logger.trace('Comment Posted!');
+                if (err) {
+                    req.body.Status = 'failure';
+                    req.body.errmsg = "Database error";
+                }
+            });
 
-    };
+        }
+    }
 
-}
+
+}());
+
+
