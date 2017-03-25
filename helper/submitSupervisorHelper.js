@@ -21,11 +21,11 @@
             if (err) {
                 req.body.Status = 'failure';
                 req.body.errmsg = "Database error";
-            };
+            }
 
         });
 
-    }
+    };
 
 }());
 

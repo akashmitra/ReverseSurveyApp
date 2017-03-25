@@ -49,7 +49,7 @@
 
         res.end(JSON.stringify(req.body));
 
-    }
+    };
 
 }());
 

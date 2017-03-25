@@ -53,7 +53,7 @@
             console.log('Team Mates Created!');
         });
 
-    }
+    };
 
 }());
 

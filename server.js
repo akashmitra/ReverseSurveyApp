@@ -1,7 +1,6 @@
-/* Importing Support APIs */
-
 (function () {
 
+    /* Importing Support APIs */
     var express = require('express'),
         http = require('http'),
         path = require('path'),

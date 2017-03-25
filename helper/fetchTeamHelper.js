@@ -9,7 +9,8 @@
 
         var data = {
             'MEMBERS': req.body.resourceName
-        }
+        };
+
         // get the Team details
         Team.find(data, function (err, result) {
             if (err) {
@@ -32,7 +33,7 @@
 
         });
 
-    }
+    };
 
 
 }());

@@ -10,7 +10,8 @@
 
         var data = {
             'SUPERVISOR': req.body.resourceName
-        }
+        };
+        
         console.log("searched data is:: " + data.SUPERVISOR);
 
 
@@ -39,7 +40,7 @@
 
         });
 
-    }
+    };
 
 }());
 
