@@ -8820,3 +8820,90 @@
 [2017-03-19 18:23:45.515] [TRACE] develop - Express server listening on port 80
 [2017-03-19 18:23:45.560] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/v360
 [2017-03-19 18:23:59.230] [TRACE] develop - Number of Resources :: 107
+[2017-03-25 10:12:23.011] [TRACE] develop - Express server listening on port 80
+[2017-03-25 10:12:23.065] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/v360
+[2017-03-25 10:34:47.621] [TRACE] develop - Express server listening on port 80
+[2017-03-25 10:34:47.668] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/v360
+[2017-03-25 10:35:12.582] [TRACE] develop - Number of Resources :: 107
+[2017-03-25 10:36:54.211] [TRACE] develop - The Body :: [object Object]
+[2017-03-25 10:36:54.250] [INFO] console - newOverview :: { _id: 58d5faeed113d4401454d3cf,
+  TEAM: 'VORTEX',
+  TIME: '2',
+  SEX: 'F',
+  RESPONDANT: 'Akash' }
+[2017-03-25 10:36:54.260] [TRACE] develop - newPortfolio :: { _id: 58d5faeed113d4401454d3d0,
+  INVOLVE: '2',
+  RATE: '2',
+  SUPERVISOR: '284262',
+  RESPONDANT: 'Akash' }
+[2017-03-25 10:36:54.272] [INFO] console - newPortfolio :: { _id: 58d5faeed113d4401454d3de,
+  ASPIRE: undefined,
+  Q11: undefined,
+  Q10: undefined,
+  Q9: undefined,
+  Q8: undefined,
+  Q7: undefined,
+  Q6: undefined,
+  Q5: undefined,
+  Q4: undefined,
+  Q3: undefined,
+  Q2: undefined,
+  Q1: undefined,
+  RESPONDANT: 'Akash' }
+[2017-03-25 10:36:54.446] [INFO] console - Overview Added!
+[2017-03-25 10:36:54.449] [INFO] console - Team Mates Created!
+[2017-03-25 10:36:54.451] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.452] [TRACE] develop - Portfolio Created!
+[2017-03-25 10:36:54.453] [TRACE] develop - Supervisor Created!
+[2017-03-25 10:36:54.454] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.457] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.459] [INFO] console - Team Mates Created!
+[2017-03-25 10:36:54.460] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.460] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.461] [INFO] console - Team Mates Created!
+[2017-03-25 10:36:54.463] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.464] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.465] [INFO] console - Team Created!
+[2017-03-25 10:36:54.467] [TRACE] develop - Comment Posted!
+[2017-03-25 10:36:54.468] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.458] [TRACE] develop - The Body :: [object Object]
+[2017-03-25 10:41:58.467] [INFO] console - newOverview :: { _id: 58d5fc1ed113d4401454d3df,
+  TEAM: 'VORTEX',
+  TIME: '2',
+  SEX: 'F',
+  RESPONDANT: 'Akash' }
+[2017-03-25 10:41:58.471] [TRACE] develop - newPortfolio :: { _id: 58d5fc1ed113d4401454d3e0,
+  INVOLVE: '2',
+  RATE: '2',
+  SUPERVISOR: '284262',
+  RESPONDANT: 'Akash' }
+[2017-03-25 10:41:58.484] [INFO] console - newPortfolio :: { _id: 58d5fc1ed113d4401454d3ee,
+  ASPIRE: undefined,
+  Q11: undefined,
+  Q10: undefined,
+  Q9: undefined,
+  Q8: undefined,
+  Q7: undefined,
+  Q6: undefined,
+  Q5: undefined,
+  Q4: undefined,
+  Q3: undefined,
+  Q2: undefined,
+  Q1: undefined,
+  RESPONDANT: 'Akash' }
+[2017-03-25 10:41:58.527] [INFO] console - Overview Added!
+[2017-03-25 10:41:58.539] [INFO] console - Team Mates Created!
+[2017-03-25 10:41:58.540] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.541] [TRACE] develop - Portfolio Created!
+[2017-03-25 10:41:58.542] [INFO] console - Team Mates Created!
+[2017-03-25 10:41:58.547] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.548] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.550] [TRACE] develop - Supervisor Created!
+[2017-03-25 10:41:58.557] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.558] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.558] [INFO] console - Team Created!
+[2017-03-25 10:41:58.560] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.562] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.564] [INFO] console - Team Mates Created!
+[2017-03-25 10:41:58.565] [TRACE] develop - Comment Posted!
+[2017-03-25 10:41:58.567] [TRACE] develop - Comment Posted!
