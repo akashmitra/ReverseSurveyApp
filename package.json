@@ -6,7 +6,7 @@
     "express": "^3.1.0",
     "grunt": "^0.4.5",
     "log4js": "^0.6.29",
-    "jquery": "^2.1.4",
+    "jquery": "^3.4.1",
     "mongodb": "^2.0.48",
     "mongoose": "^4.2.7",
     "nodemailer": "^1.10.0"
