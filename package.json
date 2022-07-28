@@ -8,7 +8,7 @@
     "log4js": "^0.6.29",
     "jquery": "^3.4.1",
     "mongodb": "^2.0.48",
-    "mongoose": "^4.2.7",
+    "mongoose": "^6.4.6",
     "nodemailer": "^1.10.0"
   },
   "description": "A reverse Survey for IT companies.",
