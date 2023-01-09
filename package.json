@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "^1.4.7",
-    "express": "^3.1.0",
+    "express": "^4.0.0",
     "grunt": "^0.4.5",
     "log4js": "^0.6.29",
     "jquery": "^3.4.1",
     "mongodb": "^2.0.48",
-    "mongoose": "^4.2.7",
-    "nodemailer": "^1.10.0"
+    "mongoose": "^5.2.6",
+    "nodemailer": "^3.0.0"
   },
   "description": "A reverse Survey for IT companies.",
   "main": "app.js",
