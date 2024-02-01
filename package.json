@@ -9,7 +9,7 @@
     "jquery": "^3.4.1",
     "mongodb": "^2.0.48",
     "mongoose": "^4.2.7",
-    "nodemailer": "^1.10.0"
+    "nodemailer": "^6.9.9"
   },
   "description": "A reverse Survey for IT companies.",
   "main": "app.js",
